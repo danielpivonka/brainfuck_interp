@@ -1,6 +1,7 @@
 default:
   image: rust:alpine3.13
   before_script:
+    - apk add --no-cache alpine-sdk
     - rustc --version 
     - cargo --version
   tags:
